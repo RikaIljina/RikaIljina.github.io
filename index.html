@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hangman</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mooli&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="hangman-style.css" type="text/css" />
+    <script type="text/javascript" src="hangman-logic.js"></script>
+</head>
+
+<body>
+    <img src="words2.jpg" alt="" />
+    <div class="container">
+
+        <h1>Friendly Hangman</h1>
+        <p >... because noone is being hanged. <br> I've chosen a word for you to guess. <br>Start the game, enter a letter and see if it is correct. Or just guess the whole word!</p>
+        <div id="game-container">
+            <button id="start-game" type="button" onclick="start_game()">Start</button><br>
+            <input type="text" id="letter" placeholder="?">
+            <button id="check-letter" type="button" onclick="check_letter() ">Check letter</button><br>
+            <input type="text" id="guess-word" placeholder="guess word">
+            <button id="check-word" type="button" onclick="check_word() ">Check word</button>
+            <div class="scoretable" id="show-score" style="left: -50%; top: -50%">
+                <table>
+                    <tr>
+                        <td>
+                            <p id="score-text">Your Score</p>
+                            <p><button onclick="start_game()" id="back-btn">Back</button></p>
+                        </td>
+                        <td>
+                            <p id="score-prev">Total Score</p>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <p id="news-ticker">So, how many attempts will it take you this time?</p>
+            <p id="result">[CLiCK STaRT]</p>
+            <p id="used-letters">Used letters: </p>
+            <p id="countdown" >Countdown: </p>
+            <!-- <button id="restart" type="button" >Restart the game</button> -->
+
+        </div>
+
+
+    </div>
+</body>
+
+</html>

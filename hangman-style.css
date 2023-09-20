@@ -1,0 +1,213 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    margin: auto;
+    padding: 0;
+    font-family: 'Mooli', sans-serif;
+    color: #272744;
+    background-color: #fbf5ef;
+}
+
+img {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.container {
+    margin: 40px;
+    width: 90%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 300%;
+    padding-bottom: 20px;
+}
+
+h1,
+p {
+    margin: auto;
+    line-height: 25px;
+}
+
+button {
+    font-family: 'Mooli', sans-serif;
+    margin-bottom: 20px;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #494d7e;
+    color: #fbf5ef;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+button:hover {
+    opacity: 0.8;
+    box-shadow: inset 0 0 10px 8px black;
+}
+
+button:active {
+    opacity: 0.3;
+}
+
+#start-game {
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+    margin-top: 40px;
+
+}
+
+#news-ticker {
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-style: solid;
+    border-width: 1px;
+    width: 50%;
+
+}
+
+#letter {
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #8b6d9c;
+    box-shadow: inset 0px 0px 6px 3px rgb(27, 27, 44, 0.35);
+    color: #fbf5ef;
+    height: 45px;
+    width: 50px;
+    padding-left: 20px;
+    margin: 10px 30px 10px 0px;
+
+}
+
+#letter::placeholder {
+    color: #fbf5ef;
+}
+
+#letter:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 6px 5px rgb(10, 9, 9, 0.55);
+}
+
+#guess-word {
+    font-family: 'Mooli', sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 30px;
+    border-style: none;
+    background-color: #a38cb1;
+    box-shadow: inset 0px 0px 6px 3px rgb(27, 27, 44, 0.35);
+    color: #fbf5ef;
+    height: 45px;
+    width: 150px;
+    padding-left: 20px;
+    margin: 10px 30px 10px 0px;
+
+}
+
+#guess-word::placeholder {
+    color: #fbf5ef;
+}
+
+#guess-word:focus {
+    outline: none;
+    box-shadow: inset 0px 0px 6px 5px rgb(10, 9, 9, 0.55);
+}
+
+#check-letter {
+    padding: 15px 20px 15px 20px;
+    margin-left: 100px;
+}
+
+#check-word {
+    padding: 15px 20px 15px 20px;
+}
+
+#restart {
+    padding: 15px 20px 15px 20px;
+}
+
+#result {
+    letter-spacing: 10px;
+    font-family: 'Mooli', sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: #f2d3ab;
+    width: 50%;
+    padding: 20px 0 20px 0;
+}
+
+#used-letters,
+#countdown {
+    background-color: #c69fa5;
+    width: 50%;
+    margin: 5px auto;
+    padding: 10px 0 10px 0;
+}
+
+#lost-chosen {
+    font-size: 130%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: #35355e;
+    text-decoration: underline;
+}
+
+#count {
+    font-size: 140%;
+    color: #711d80;
+}
+
+.scoretable {
+    height: 300px;
+    width: 600px;
+    background-color:#8b6d9c;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #35355e;
+    box-shadow: -5px -5px 4px #272744;
+    position: fixed;
+    top: -50%;
+    left: -50%;
+    margin-top: -150px;
+    margin-left: -330px;
+    transition: all 0.9s;
+
+}
+
+.scoretable table tr td p {
+    color: white;
+    /* text-align: center; */
+    padding-left: 50px;
+    padding-top: 30px;
+
+    
+}
+
+.scoretable table  {
+padding: 0 0 200px 0;
+    
+}
+
+#back-btn {
+    margin-top: 50px;
+    padding: 10px 20px 10px 20px;
+}
+
+#score-prev {
+    font-size: 120%;
+    font-weight: bold;
+}
+
+@media screen and (max-width: 768px) {
+
+}
